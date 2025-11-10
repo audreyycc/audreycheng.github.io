@@ -1,0 +1,111 @@
+
+/* Page Links at Top of Each Page */
+.pagelinks {
+    color: black;
+    font-size: 150%;
+    text-decoration: none;
+    margin-inline: 15%;
+}
+
+/* Site Wide Styles */
+    body,h1 {
+      margin: 0;
+      font-family: 'Nanum Myeongjo';
+      color: #111;
+    }
+
+    /* Top navigation */
+    header {
+      display: flex;
+      justify-content: center;
+      gap: 12rem;
+      background-color: white;
+      padding: 2rem 0;
+      font-size: 100%;
+    } 
+
+    header a {
+      text-decoration: none;
+      color: black;
+      position: relative;
+      transition: opacity 0.2s;
+    }
+
+    header a:hover {
+      opacity: 0.6;
+    }
+
+
+/* About Page */
+    .about-page {
+        margin: 0;
+        font-family: 'Nanum Myeongjo';
+        color: #111;
+    }
+    .about-padding {
+        margin-top: 5%;
+    }
+
+    /* Photo section */
+    .about-page .photo img {
+      width: 100%;
+      margin-bottom: 50px;
+    }
+
+    /* Text section */
+    .about-text {
+      max-width: 600px;
+      line-height: 1.6;
+    }
+
+    .about-text h1 {
+      font-size: 2.8rem;
+      margin-bottom: 1rem;
+      font-weight: 500;
+      text-align: center;
+    }
+
+    @media (max-width: 900px) {
+      main {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+      .about-text {
+        max-width: 90%;
+      }
+    } 
+
+/* --- Gradient Intro Page --- */
+    .gradient-page {
+        height: 100vh;            /* full screen height */
+        overflow: hidden;         /* hides any scroll */
+        display: flex;
+        flex-direction: column;
+      }
+      
+      .gradient-page header {
+        flex-shrink: 0;           /* keeps header visible */
+      }
+      
+      .gradient-page main.centered-name {
+        flex: 1;                  /* takes up remaining space */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: radial-gradient(circle at center, #d8a5a5 0%, #cbb58a 100%);
+      }
+
+    .gradient-page h1 {
+        font-size: 3rem;
+        font-weight: 400;
+    }
+/* --- Projects Page --- */
+    .projects-page {
+        font-family: 'Nanum Myeongjo';
+        color: #111;
+    }
+
+    .projects-padding {
+        padding: 5%;
+    }
